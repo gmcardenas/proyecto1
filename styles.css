@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;600&display=swap');
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+ }
+
+ /* aplica a todos los elementos */
+ * {  margin: 0px;
+      padding: 0px;
+      font-family: 'Spartan', sans-serif;
+     }
+
+#top{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 8% 72% 5% 5% 5% 5%;
+    grid-template-rows: 100%;
+    z-index: 99;
+    }
+h1 {
+    color:rgb(180, 133, 15);
+    padding-top: 30px;
+    font-size: 40px;
+    font-family: castellar;
+    transition:  3s;}
+#redes {
+    width: 40px;  
+    padding-top: 30px; }
+#logo {
+    width: 100px;  }
+#top h1:hover {
+    filter: hue-rotate(-90deg);
+        }
+#logo:hover {
+    transition: 2s;
+    transform: rotate(360deg);
+         }
+
+ /*  menu   */  
+#navegador {
+    position: fixed;
+    top: 100px;
+    height: 30px;
+    width: 100%;
+    z-index: 80;        }
+#navegador li {
+    background-color: purple;
+    text-align: center;
+    width: 25%;
+    padding: 3px 0px 3px 0px;
+    float: left;
+    font-size: 24px; 
+    list-style-type: none; }
+
+#subseccion1 {
+    width: 1400px; 
+   }	
+#subseccion2 { 
+     font-size: 30px; width: 100%; font-weight: 500;}	    
+#subseccion4 { 
+     font-size: 20px; width: 800px; font-weight: 500;}	    
+#subseccion3 p:hover { 
+    background-color: purple;}	
+#navegador li:hover { 
+    background-color: fuchsia; font-weight: 600; }
+#navegador li a:link, #navegador li a:visited { 
+    color: white; text-decoration: none; }
+#navegador li a:hover, #navegador li a:active { 
+     text-decoration: none;  }
+.borrar { clear: both; }
+
+#center {
+    position: relative;
+    top: 130px;
+    left: 0px;   
+    width: 100%;
+}
+
+ /* carrusel de imagenes */
+#visor { 
+        position: absolute;
+        width: 512px; 
+        height: 512px; 
+        background-color: silver;
+        overflow: hidden; 
+     }
+#visor img { width: 512px; }
+#saliente { position: absolute; top: 0px; left: 0px; }
+#entrante { position: absolute; top: 0px; left: 512px;}
+table { border-collapse: collapse ; }
+
+#texto {
+    position:absolute;
+    left: 513px;
+    top: 0px;
+    width: 512px; 
+    height: 512px; 
+    font-size: 40px;
+    color: purple;
+    background-color: rgb(250, 231, 233);
+    background-image: url("golden circular.png");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+        }
+
+#productos{
+    position: absolute;
+    left: 1025px;
+    top:0px;
+    width: 354px;
+    height: 512px; 
+    color:white;
+    background-color: fuchsia;
+    font-size: 40px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+     }
+
+#slider {
+        background-color:pink;
+           }
+#slider button {
+    height:100px;
+    width:50px;
+    top: 200px;
+    background-color: pink;
+}
+
+#prev {
+    position: absolute;
+    left: 90px;
+    background-image:url(izquierda.png);
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: contain; 
+ }
+   
+#next {
+    position: absolute;
+    right: 90px;
+    background-image:url(derecha.png);
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    background-size: contain; 
+      
+}
+#slider img {
+    padding : 3%;
+    width: 30%;
+      }
+
+form {
+    text-align: left;
+    padding: 20px;
+    width: 430px;
+    background-color: pink;
+    color: purple;
+    position: absolute;
+    top: 35px;
+    right: 0px;
+    font-weight: 500;
+    }
+.enviar {
+    background-color:  purple;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+     }
+.enviar:hover {
+    background-color: fuchsia;
+    }
+textarea {
+  
+    }
+input, textarea, select  {
+    font-weight: 500;
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background-color:  white;
+    border-radius: 1px;
+    outline: none;
+}
+
+#tabla {
+    position: absolute;
+    top: 35px;
+    width: 60%;
+    background-color: pink;
+    padding: 10px;
+         }
+#tabla table, #tabla td {
+    padding: 5px;
+    width: 100%;
+    color: purple;
+    border: 1px solid purple;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+  }
+#ttabla {
+    background-color: fuchsia;
+    color: white ;
+    font-weight: 600;
+      }

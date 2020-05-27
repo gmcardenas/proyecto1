@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldenmoondesing</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div id="top">
+      <img id ="logo" src = "golden circular.png" alt ="golden logo">  
+      <h1>Golden Moon Design</h1>
+      <a href="https://www.instagram.com/goldenmoondesign/" target="_blank">
+          <img  id="redes" src="instagramdorado.jpg" alt= "istagram">
+      </a>
+      <img id="redes" src="facebookdorado.jpg" alt="facebook" >  
+      <img id="redes" src="whatsappdorado.jpg" alt="whatsapp" >
+      <img id="redes" src="emaildorado.jpg" alt="email" >
+    </div>
+
+    <!--                     menus           -->
+    <div id="navegador">
+      <ul>
+        <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+          <a href="#">Bisuteria</a>
+          <div id="subseccion1">
+            <div id="slider"> 
+              <button id="prev" onclick="prev()"> </button>
+              <img id="Islider1" src="i1.jpg" >      
+              <img id="Islider2" src="i2.jpg" >   
+              <button id="next" onclick="next()"> </button>
+            </div>         
+          </div>
+        </li>
+        <li id="seccion2"  onmouseover="ver(2)" onmouseout="ocultar(2)">
+          <a href="#">Entrenamiento</a>
+          <div id="subseccion2">
+          <div id="tabla">
+            <table>
+                <tr>
+                 <th width="25%" id="ttabla">Curso</th>
+                 <th width="25%" id="ttabla">Horas </th>
+                 <th width="25%" id="ttabla">Materiales</th>
+               </tr>
+               <tr>
+                 <td>Basico</td> <td>2</td> <td>Incluido</td>
+               </tr>
+               <tr>
+                 <td>Medio</td>  <td>3</td>  <td>Incluido</td>
+               </tr>
+               <tr>
+                 <td>Avanzado</td> <td>4</td> <td>No Incluido</td>
+               </tr>   
+             </table>
+           </div>
+          </div>
+        </li>
+        <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
+          <a href="#">Materiales</a>
+          <div id="subseccion3">
+          <p><a href="#">Fabricacion</a></p>
+          <p><a href="#">Maquila</a></p>
+         </div>
+        </li>
+        <li id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
+          <a href="#">Contactanos</a> 
+          <div id="subseccion4">
+            <div id="contactame">
+                <form>
+                  Nombre<input name="nombre" type="text" size=20 placeholder="nombre completo"><br>
+                  E-Mail..<input name="email" type="email"  required><br>
+                  Fecha N<input name="nacimiento" type="date" ><br>
+                  Sexo:... <input name="sexo" type="radio" value ="M"> Masculino
+                          <input name="sexo" type="radio" value ="F"> Femenino  <br> 
+                  Interes .<select id="interes" name="interes">
+                        <option value="Bisuteria">Bisuteria</option>
+                        <option value="Materiales">Materiales</option>
+                        <option value="Entrenamiento">Entrenamiento</option>
+                        </select> <br>
+                  Artesano <input name="data" type="checkbox" ><br>
+                  <textarea name="mensaje" placeholder=" Comentarios"rows="3" cols="30" ></textarea><br>
+                  <input type="submit" value="Enviar" class="enviar">
+                  <input type="reset"  value="Limpiar" class="enviar">
+                   </form>
+            </div>
+           </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="borrar"></div>   
+
+    <div id="center">
+      <!--                    CARRUSEL DE IMAGENES       -->
+      <div id="visor">
+        <div id="saliente">
+         <table><td>
+          <th id="TablaimagenS"><img src="foto1.jpg" width="512" name="fotoSaliente" />
+          </th></td></table>
+         </div>
+        <div id="entrante">
+          <table><td>
+          <th id="TablaimagenE"><img src="foto2.jpg" width="512" name="fotoEntrante" />
+          </th></td></table>
+        </div>   
+      </div>
+
+      <div id="texto">
+          <p>Bisuteria Hecha a Mano (HandMade)</p>
+          <p>Piezas Unicas y Originales</p>
+          <p>Tecnicas de Alambrismo</p>
+      </div>
+
+      <div id="productos">
+        <ul>
+          <li>Aretes</li>
+          <li>Collares</li>
+          <li>Pulseras</li>
+          <li>Dijes</li>
+       </ul> 
+      </div>
+
+    </div>
+     
+<!--    
+          <div class="bottom" id="fotos">
+            <img src = "capture1.png" alt ="gmd1">
+            <img src = "capture2.png" alt ="gmd2">
+            <img src = "capture3.png" alt ="gmd3">
+            <img src = "capture4.png" alt ="gmd4">
+            <img src = "capture5.png" alt ="gmd5">
+            <img src = "capture6.png" alt ="gmd6">
+            <img src = "capture7.png" alt ="gmd7">
+          </div>
+        
+    <div class="barra">
+    </div>
+  --> 
+</body>
+</html>
